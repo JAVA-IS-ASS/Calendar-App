@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:padding="16dp"
+
+    tools:context=".MainActivity">
+
+
+
+    <CalendarView
+
+        android:id="@+id/calendarView"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content" />
+
+
+
+    <EditText
+
+        android:id="@+id/reminderEditText"
+
+        android:layout_below="@id/calendarView"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:hint="Enter reminder" />
+
+
+
+    <Button
+
+        android:id="@+id/addReminderButton"
+
+        android:layout_below="@id/reminderEditText"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Add Reminder"
+
+        android:onClick="addReminder" />
+
+
+
+    <Button
+
+        android:id="@+id/viewReminderButton"
+
+        android:layout_below="@id/addReminderButton"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="View Reminder"
+
+        android:onClick="viewReminders" />
+
+
+
+</RelativeLayout>
